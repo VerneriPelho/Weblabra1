@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  color: white;
+  border: none
+</style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Asiakaspalautelomake</title>
+  </head>
+  <body>
+    <h1>Asiakaspalautelomake</h1>
+    <form action="submit_feedback.php" method="post">
+      <label for="date">Päivämäärä:</label>
+      <input type="date" id="date" name="date"><br><br>
+      <label for="wait_time">Odotusaika:</label>
+      <input type="text" id="wait_time" name="wait_time"><br><br>
+      <label for="food_taste">Ruoan maku:</label>
+      <input type="text" id="food_taste" name="food_taste"><br><br>
+      <label for="food_temperature">Ruoan lämpötila:</label>
+      <input type="text" id="food_temperature" name="food_temperature"><br><br>
+      <label for="food_appearance">Ruoan ulkonäkö:</label>
+      <input type="text" id="food_appearance" name="food_appearance"><br><br>
+      <label for="price">Hinta:</label>
+      <input type="text" id="price" name="price"><br><br>
+      <label for="service">Palvelu:</label>
+      <input type="text" id="service" name="service"><br><br>
+      <label for="free_feedback">Vapaa palautteesi:</label>
+      <textarea id="free_feedback" name="free_feedback"></textarea><br><br>
+      <label for="contact_info">Yhteystietosi (vapaaehtoinen):</label>
+      <input type="text" id="contact_info" name="contact_info"><br><br>
+      <input type="submit" value="Lähetä">
+    </form>
+  </body>
+</html>
